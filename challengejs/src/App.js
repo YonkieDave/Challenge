@@ -10,7 +10,7 @@ document
 
     const ciudad = document.getElementById("ciudad").value,
       vehiculo = document.getElementById("vehiculo").value,
-      cantidad = document.getElementById("cantidad").value;
+      cantidad = document.getElementById("cantidad").value,
       horas = document.getElementById("horas").value;
 
 
