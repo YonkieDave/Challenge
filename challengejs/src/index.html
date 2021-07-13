@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Challenge</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css">
+
+    <link rel="stylesheet" href="App.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Challenge</a>
+    </nav>
+
+    <div class="container">
+
+        <div id="App" class="row pt-5">
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Formulario Rentas</h4>
+                    </div>
+                    <form id="rentas-form" class="card-body">
+                        <div class="form-group">
+                            <p>Ingrese la ciudad</p>
+                            <select  id="ciudad" placeholder="Ciudad" class="form-control">
+                              <option value="Guadalajara">Guadalajara</option>
+                              <option value="Tijuana">Tijuana</option>
+                              <option value="Culiacan">Culiacan</option>
+                              <option value="Toluca">Toluca</option>
+                              <option value="Merida">Merida</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                          <p>Ingrese el vehiculo</p>
+                            <select  id="vehiculo" placeholder="Ciudad" class="form-control">
+                              <option value="Bicicleta">Bicicleta</option>
+                              <option value="Moto">Moto</option>
+                              <option value="Cuatrimoto">Cuatrimoto</option>
+                              <option value="Carro de golf">Carro de golf</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                          <p>Ingrese la cantidad de vehiculos a rentar</p>
+                            <input type="number" id="cantidad" min="1" max="100" step="1" placeholder="Cantidad a rentar..."
+                                class="form-control">
+                        </div>
+                        <div class="form-group">
+                          <p>Ingrese las horas de renta</p>
+                            <input type="number" id="horas" min="1" max="100" step="1" placeholder="Tiempo en horas..."
+                                class="form-control">
+                        </div>
+                        <input type="submit" value="Agregar" class="btn btn-primary btn-block">
+                    </form>
+                </div>
+            </div>
+
+            <div id="rentas-list" class="col-md-8"></div>
+
+            <div id="recaudacion-vehiculo-ciudad" class="col-md-8"></div>
+        </div>
+    </div>
+
+
+    <script src="App.js" type="module"></script>
+</body>
+
+</html>
